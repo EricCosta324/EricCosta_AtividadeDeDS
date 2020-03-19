@@ -1,0 +1,75 @@
+principal
+
+package exercicio1;
+
+	public class principal {
+	public static void main(String args[]) {
+		
+		filme1 info_filme = new filme01();
+			info_filme.titulo = "Os Vingadores";
+
+			info_filme.duracao_mnts = 142;
+
+			info_filme.duracao_hrs = "02:22";
+
+		System.out.println("filme1: "+info_filme.titulo);
+
+		System.out.println("duracao do filme em minutos: "+info_filme.duracao_mnts);
+
+		System.out.println("duracao do filme em horas: "+info_filme.duracaoemhrs());
+
+
+	
+		filme2 info_filme2 = new filme2();
+			info_filme2.titulo = "Hotel Transilvânia";
+
+			info_filme2.duracao_mnts = 93;
+
+			info_filme2.duracao_hrs = "01:33";
+
+		System.out.println("filme2: "+info_filme2.titulo);
+
+		System.out.println("duracao do filme em minutos: "+info_filme2.duracao_mnts);
+
+		System.out.println("duracao do filme em horas: "+info_filme2.duracaoemhrs());
+
+		System.out.println(" 'Os filmes em cartaz são '"+info_filme.titulo+"' e '"+info_filme2.titulo+"''.");
+
+}
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+filme 1
+
+package exercicio1;
+
+	public class filme1 {
+
+		String titulo;
+		int duracao_mnts;
+		String duracao_hrs;
+
+	}
+
+
+	String duracaoemhrs(){
+		return duracao_hrs;
+}
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+filme 2
+package exercicio1;
+
+	public class filme2 {
+
+		String titulo;
+		int duracao_mnts;
+		String duracao_hrs;
+
+	}
+
+
+		String duracaoemhrs(){
+			return duracao_hrs;
+}
+}
